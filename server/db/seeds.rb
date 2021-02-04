@@ -37,7 +37,7 @@ super_user =User.create(
 
     100.times do
         Auction.create(
-            title: Faker::Restaurant.name,
+            title: Faker::Device.model_name ,
             description: Faker::Lorem.paragraph,
             end_date:Faker::Date.forward(days: 30),
             reserve_price: Faker::Number.decimal(l_digits: 2),
